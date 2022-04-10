@@ -1,6 +1,6 @@
 // 公共的请求接口
 const base = {
-  host: 'http://api.tianapi.com', //天行数据
+  host: 'https://api.tianapi.com', //天行数据
   covInfo: '/ncov/index?key=9113e0927e455f55604d9e9d41c7515f', //疫情信息接口
   chinaDataInfo: 'https://yspm.api.storeapi.net/api/94/219?format=json&appid=14089&sign=5d82ee217b1a500db751585a05b8d485'
 }
