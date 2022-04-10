@@ -8,7 +8,10 @@ import {
   Button,
   Swipe,
   SwipeItem,
-  Overlay
+  Overlay,
+  Collapse,
+  CollapseItem,
+  Icon 
 } from 'vant';
 
 Vue.use(Col);
@@ -20,3 +23,6 @@ Vue.use(Button);
 Vue.use(Swipe);
 Vue.use(SwipeItem);
 Vue.use(Overlay);
+Vue.use(Collapse);
+Vue.use(CollapseItem);
+Vue.use(Icon);

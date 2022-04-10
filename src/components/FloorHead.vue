@@ -1,10 +1,26 @@
 <template>
   <div class="floorHead">
     <van-row>
-      <van-col span="6" :class="activeIndex == 1 ? 'active' : ''">地区风险</van-col>
-      <van-col span="6" :class="activeIndex == 2 ? 'active' : ''">国内数据</van-col>
-      <van-col span="6" :class="activeIndex == 3 ? 'active' : ''">全球数据</van-col>
-      <van-col span="6" :class="activeIndex == 4 ? 'active' : ''">新冠疫苗</van-col>
+      <van-col span="6"
+        :class="activeIndex == 0 ? 'active' : ''"
+        data-i="0"
+          @click="handleClick"
+      >地区风险</van-col>
+      <van-col span="6"
+        :class="activeIndex == 1 ? 'active' : ''"
+        data-i="1"
+        @click="handleClick"
+      >国内数据</van-col>
+      <van-col span="6"
+        :class="activeIndex == 2 ? 'active' : ''"
+        data-i="2"
+        @click="handleClick"
+      >全球数据</van-col>
+      <van-col span="6"
+        :class="activeIndex == 3 ? 'active' : ''"
+        data-i="3"
+        @click="handleClick"
+      >新冠疫苗</van-col>
     </van-row>
   </div>
 </template>
@@ -13,6 +29,11 @@
 export default {
   props: {
     activeIndex: Number
+  },
+  methods: {
+    handleClick(e) {
+      this.$emit('listenClick', e.target.dataset.i)
+    }
   }
 }
 </script>
