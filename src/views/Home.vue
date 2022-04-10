@@ -155,7 +155,7 @@ export default {
   },
   methods: {
     scrollToScreenTop(index) {
-      this.$el.querySelector('#f'+index).scrollIntoView({behavior: 'smooth'})
+      this.$el.querySelector('#f'+index).scrollIntoView({behavior: 'smooth', block: 'start'})
     }
   },
   created() {

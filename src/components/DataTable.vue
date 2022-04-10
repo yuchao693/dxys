@@ -84,7 +84,7 @@ export default {
     text-align: center;
     line-height: 0.6rem;
     font-weight: bold;
-    font-size: 0.1rem;
+    font-size: 0.14rem;
     .van-col {
       border-right: 1px solid #fff;
     }
@@ -92,7 +92,7 @@ export default {
   .detail {
     /deep/ .van-cell {
       padding: 0;
-      font-size: 0.1rem;
+      font-size: 0.14rem;
       line-height: 0.6rem;
       text-align: center;
       .area {
