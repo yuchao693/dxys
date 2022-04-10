@@ -10,6 +10,11 @@ const routes = [
     name: 'Home',
     component: Home
   },
+  {
+    path: '/wuzi',
+    name: 'Wuzi',
+    component: () => import('../views/Wuzi.vue')
+  }
 ]
 
 const router = new VueRouter({

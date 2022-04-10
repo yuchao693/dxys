@@ -42,8 +42,10 @@
           <img src="../assets/images/hot.png" class="hotimg">
         </van-col>
         <van-col span="6">
-          <img src="../assets/images/3.png" >
-          <div>防疫物资</div>
+          <router-link to="/wuzi">
+            <img src="../assets/images/3.png" >
+            <div>防疫物资</div>
+          </router-link>
         </van-col>
         <van-col span="6">
           <img src="../assets/images/4.png" >

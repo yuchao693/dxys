@@ -1,10 +1,14 @@
 import Vue from 'vue';
-import { 
-  Col, 
+import {
+  Col,
   Row,
   Divider,
   Grid,
-  GridItem
+  GridItem,
+  Button,
+  Swipe,
+  SwipeItem,
+  Overlay
 } from 'vant';
 
 Vue.use(Col);
@@ -12,3 +16,7 @@ Vue.use(Row);
 Vue.use(Divider);
 Vue.use(Grid);
 Vue.use(GridItem);
+Vue.use(Button);
+Vue.use(Swipe);
+Vue.use(SwipeItem);
+Vue.use(Overlay);
