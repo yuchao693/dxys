@@ -1,4 +1,6 @@
 module.exports = {
   lintOnSave: false,
-  publicPath:'./'
+  assetsDir: 'static',
+  parallel: false,
+  publicPath: './',
 }
