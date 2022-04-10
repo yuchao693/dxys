@@ -300,6 +300,7 @@ export default {
 // 楼层导航
 // 国内疫情地图
 .chinaMap {
+  width: 100%;
   .title {
     margin: 0.3rem;
     height: 0.5rem;
