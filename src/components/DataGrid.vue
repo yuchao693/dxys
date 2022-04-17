@@ -28,6 +28,9 @@ export default {
     addPoint(val) {
       return val.toLocaleString()
     }
+  },
+  mounted() {
+    console.log(this.data)
   }
 }
 </script>

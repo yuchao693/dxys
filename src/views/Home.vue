@@ -173,56 +173,57 @@ export default {
         this.chinaDataCount = [
           {
             type: '现存确诊',
-            incr: desc.currentConfirmedIncr,
-            count: desc.currentConfirmedCount
+            incr: desc.currentConfirmedIncr || '',
+            count: desc.currentConfirmedCount || ''
           },
           {
             type: '境外输入',
-            incr: desc.suspectedIncr,
-            count: desc.suspectedCount
+            incr: desc.suspectedIncr || '',
+            count: desc.suspectedCount || ''
           },
           {
             type: '现存无症状',
-            incr: desc.seriousIncr,
-            count: desc.seriousCount
+            incr: desc.seriousIncr || '',
+            count: desc.seriousCount || ''
           },
           {
             type: '累计确诊',
-            incr: desc.confirmedIncr,
-            count: desc.confirmedCount
+            incr: desc.confirmedIncr || '',
+            count: desc.confirmedCount || ''
           },
           {
             type: '累计死亡',
-            incr: desc.deadIncr,
-            count: desc.deadCount
+            incr: desc.deadIncr || '',
+            count: desc.deadCount || ''
           },
           {
             type: '累计治愈',
-            incr: desc.curedIncr,
-            count: desc.curedCount
+            incr: desc.curedIncr || '',
+            count: desc.curedCount || ''
           }
         ],
+        console.log(this.chinaDataCount)
         //全球数据统计
         this.globalDataCount = [
           {
             type: '现存确诊',
-            incr: desc.globalStatistics.currentConfirmedIncr,
-            count: desc.globalStatistics.currentConfirmedCount
+            incr: desc.globalStatistics.currentConfirmedIncr || '',
+            count: desc.globalStatistics.currentConfirmedCount || ''
           },
           {
             type: '累计确诊',
-            incr: desc.globalStatistics.confirmedIncr,
-            count: desc.globalStatistics.confirmedCount
+            incr: desc.globalStatistics.confirmedIncr || '',
+            count: desc.globalStatistics.confirmedCount || ''
           },
           {
             type: '累计死亡',
-            incr: desc.globalStatistics.deadIncr,
-            count: desc.globalStatistics.deadCount
+            incr: desc.globalStatistics.deadIncr || '',
+            count: desc.globalStatistics.deadCount || ''
           },
           {
             type: '累计治愈',
-            incr: desc.globalStatistics.curedIncr,
-            count: desc.globalStatistics.curedCount
+            incr: desc.globalStatistics.curedIncr || '',
+            count: desc.globalStatistics.curedCount || ''
           }
         ]
       })
